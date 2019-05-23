@@ -1,6 +1,7 @@
 ## 自动化运维之路
 ### SaltStack
-![](https://upload-images.jianshu.io/upload_images/11763553-2e185dc2c761db7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://raw.githubusercontent.com/buji595/automation/master/SaltStack/saltstack-logo.png)
+
 参考网站：
 [官档](https://docs.saltstack.com/en/latest/)
 [中文手册](https://github.com/watermelonbig/SaltStack-Chinese-ManualBook)
