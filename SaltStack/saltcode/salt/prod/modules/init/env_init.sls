@@ -1,0 +1,11 @@
+include:
+  - modules.init.epel
+  - modules.init.selinux
+  - modules.init.history
+  - modules.init.sysctl
+  - modules.init.date
+  - modules.init.limits
+  - modules.init.tty
+  - modules.init.login_mes
+  - modules.init.install
+  - modules.init.zabbix_agent

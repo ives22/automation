@@ -1,0 +1,26 @@
+USER_IP=$(echo -e "\033[31m\033[1m`who -u am i 2>/dev/null| awk '{print $NF}'|sed -e 's/[()]//g'`\033[0m")
+USER_NAME=`echo -e "\033[36m\033[1m$(whoami) \033[0m"`
+IP=$(who -u am i 2>/dev/null| awk '{print $NF}'|sed -e 's/[()]//g')
+USER=$(whoami)
+HISTFILESIZE=100000
+HISTSIZE=4096
+HISTTIMEFORMAT="%F %T  $USER_IP  $USER_NAME  "
+if [ "$USER_IP" = "" ]
+then
+   USER_IP=`hostname`
+fi
+
+if [ ! -d /var/log/history ]
+then
+   mkdir /var/log/history
+   chmod 777 /var/log/history
+fi
+
+if [ ! -d /var/log/history/${LOGNAME} ]
+then
+    mkdir /var/log/history/${LOGNAME}
+    chmod 300 /var/log/history/${LOGNAME}
+fi
+DT=`date "+%Y%m%d_%H%M"`
+export HISTFILE="/var/log/history/${LOGNAME}/${DT}_${USER}_${IP}"
+chmod 600 /var/log/history/${LOGNAME}/* 2>/dev/null

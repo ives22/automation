@@ -1,0 +1,37 @@
+pkg-install:
+  pkg.installed:
+    - pkgs:
+      - gcc
+      - gcc-c++
+      - make
+      - autoconf
+      - glibc
+      - glibc-devel
+      - glib2
+      - glib2-devel
+      - pcre
+      - pcre-devel
+      - zlib
+      - zlib-devel
+      - openssl
+      - openssl-devel
+      - libpng
+      - libpng-devel
+      - freetype
+      - freetype-devel
+      - libxml2
+      - libxml2-devel
+      - bzip2
+      - bzip2-devel
+      - ncurses
+      - curl
+      - gdbm-devel
+      - libXpm-devel
+      - libX11-devel
+      - gd-devel
+      - gmp-devel
+      - readline-devel
+      - libxslt-devel
+      - expat-devel
+      - xmlrpc-c
+      - xmlrpc-c-devel
