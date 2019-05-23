@@ -3,7 +3,9 @@
 ![](https://raw.githubusercontent.com/buji595/automation/master/SaltStack/saltstack-logo.png)
 
 参考网站：
+
 [官档](https://docs.saltstack.com/en/latest/)
+
 [中文手册](https://github.com/watermelonbig/SaltStack-Chinese-ManualBook)
 ### 学习手册
 - [saltstack基本入门](https://buji595.github.io/2019/05/13/saltstack%E5%9F%BA%E6%9C%AC%E5%85%A5%E9%97%A8/)
