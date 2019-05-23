@@ -1,8 +1,12 @@
 ## Saltstack State code
 >包含了初始化系统，常用软件安装，支持系统（`CentOS6`，`CentOS7`）
+>
 >1、所有的状态`state sls`文件都放在了`salt/prod/modules`目录下
+>
 >2、`pillar`的状态文件都放在了`pillar/prod`目录下
+>
 >3、`modules/init` 系统初始化（包含了,`yum`配置，常用的基础命令包安装，用户命令`history`审计，时间同步，内核参数优化，打开文件数优化，关闭`selinux`，终端`tty`优化，`zabbix_agent`安装配置）
+>
 >4、其他软件安装都在对应的`modules`目录下已对应软件名命名
 
 
@@ -115,4 +119,5 @@ pillar_roots:
 ```
 ## 使用说明：
 > 1、将`modules`目录整体放在`salt-master`配置文件指定的`file_roots`目录下；
+>
 > 2、将`pillar`目录里面的`base`和`prod`放在配置文件指定的`pillar_roots`目录下；（建议和上面配置的`pillar`环境一致）并将`agent.sls`文件里面的`Zabbix_Server`的地址改为自己`zabbix`服务器的地址。
