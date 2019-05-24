@@ -5,6 +5,7 @@ include:
   - modules.init.sysctl
   - modules.init.date
   - modules.init.limits
+  - modules.init.crontab
   - modules.init.tty
   - modules.init.login_mes
   - modules.init.install
