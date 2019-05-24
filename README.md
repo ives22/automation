@@ -14,3 +14,5 @@
 - [saltstack状态判断unless与onlyif](https://buji595.github.io/2019/05/17/saltstack%E7%8A%B6%E6%80%81%E5%88%A4%E6%96%ADunless%E4%B8%8Eonlyif/)
 - [saltstack数据系统](https://buji595.github.io/2019/05/17/saltstack%E6%95%B0%E6%8D%AE%E7%B3%BB%E7%BB%9F/)
 - [saltstack项目实战](https://buji595.github.io/2019/05/21/saltstack%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/)
+- [saltstack使用salt-ssh模式](https://buji595.github.io/2019/05/20/saltstack%E4%BD%BF%E7%94%A8salt-ssh/)
+- [saltstack接口salt-api](https://buji595.github.io/2019/05/20/saltstack%E6%8E%A5%E5%8F%A3salt-api/)
