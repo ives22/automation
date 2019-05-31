@@ -16,3 +16,9 @@
 - [saltstack项目实战](https://buji595.github.io/2019/05/21/saltstack%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/)
 - [saltstack使用salt-ssh模式](https://buji595.github.io/2019/05/20/saltstack%E4%BD%BF%E7%94%A8salt-ssh/)
 - [saltstack接口salt-api](https://buji595.github.io/2019/05/20/saltstack%E6%8E%A5%E5%8F%A3salt-api/)
+
+
+----
+
+### Ansible
+![](https://raw.githubusercontent.com/buji595/automation/master/Ansible/ansible-logo.jpg)
