@@ -23,7 +23,7 @@
 ## Ansible
 ![](https://raw.githubusercontent.com/buji595/automation/master/Ansible/ansible-logo.jpg)
 
-参考网址：
+参考网站：
 
 [官档](https://docs.ansible.com/ansible/latest/index.html)
 
