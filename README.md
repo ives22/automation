@@ -1,5 +1,5 @@
-## 自动化运维之路
-### SaltStack
+# 自动化运维之路
+## SaltStack
 ![](https://raw.githubusercontent.com/buji595/automation/master/SaltStack/saltstack-logo.png)
 
 参考网站：
@@ -20,5 +20,15 @@
 
 ----
 
-### Ansible
+## Ansible
 ![](https://raw.githubusercontent.com/buji595/automation/master/Ansible/ansible-logo.jpg)
+
+参考网址：
+
+[官档](https://docs.ansible.com/ansible/latest/index.html)
+
+### 学习手册
+- [Ansible快速入门](https://buji595.github.io/2019/05/26/Ansible%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/)
+- [Ansible Module](https://buji595.github.io/2019/05/27/Ansible%20Ad-hoc%E5%B8%B8%E7%94%A8Module/)
+- [Ansible之Playbook](https://buji595.github.io/2019/05/29/Ansible%E4%B9%8BPlaybook/)
+- [Ansible之Roles](https://buji595.github.io/2019/06/03/Ansible%E4%B9%8BRoles/)
