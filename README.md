@@ -32,3 +32,4 @@
 - [Ansible Module](https://buji595.github.io/2019/05/27/Ansible%20Ad-hoc%E5%B8%B8%E7%94%A8Module/)
 - [Ansible之Playbook](https://buji595.github.io/2019/05/29/Ansible%E4%B9%8BPlaybook/)
 - [Ansible之Roles](https://buji595.github.io/2019/06/03/Ansible%E4%B9%8BRoles/)
+- [Ansible项目实战lnmp](https://buji595.github.io/2019/06/05/Ansible%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98lnmp/#more)
