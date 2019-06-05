@@ -1,0 +1,6 @@
+- include: copypkg.yml 
+- include: group.yml
+- include: user.yml
+- include: install.yml
+- include: config.yml
+- include: service.yml

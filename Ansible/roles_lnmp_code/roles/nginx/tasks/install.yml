@@ -1,0 +1,9 @@
+# 解压nginx软件包，编译安装
+- name: Tarxf Nginx
+  shell: "cd {{ DOWNLOAD_DIR }} && tar xf nginx-{{ NGINX_VERSION }}.tar.gz"
+
+- name: Install Nginx
+  shell: "if [ ! -d {{ INSTALL_DIR }}nginx-{{ NGINX_VERSION }} ]; then cd {{ DOWNLOAD_DIR }}nginx-{{ NGINX_VERSION }} &&./configure --prefix={{ INSTALL_DIR }}nginx-{{ NGINX_VERSION }} --user={{ USER }} --group={{ GROUP }} --with-http_ssl_module --with-stream --with-http_stub_status_module --with-file-aio --with-http_gzip_static_module && make && make install ; fi"
+
+- name: Create Link
+  file: src="{{ INSTALL_DIR }}nginx-{{ NGINX_VERSION }}" path="{{ INSTALL_DIR }}nginx" state=link

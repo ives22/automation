@@ -1,0 +1,2 @@
+- name: Create Group
+  group: name={{ GROUP }} system=yes

@@ -1,0 +1,3 @@
+# 拷贝nginx软件包到目标主机
+- name: Copy Nginx Package
+  copy: src=nginx-{{ NGINX_VERSION }}.tar.gz dest={{ DOWNLOAD_DIR }}

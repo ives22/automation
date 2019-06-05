@@ -1,0 +1,13 @@
+# 拷贝配置文件并进行配置等
+- name: Copy php.ini Template
+  template: src=php-fpm.init.j2 dest={{ INSTALL_DIR }}php/etc/php.ini
+
+- name: Create php.ini Link
+  file: src="{{ INSTALL_DIR }}php/etc/php.ini" path="/etc/php.ini" state=link
+
+- name: Copy php-fpm Template
+  template: src=php-fpm.conf.j2 dest={{ INSTALL_DIR }}php/etc/php-fpm.conf
+  notify: Restart Php-fpm
+
+- name: Create php-fpm Link
+  file: src="{{ INSTALL_DIR }}php/etc/php-fpm.conf" path="/etc/php-fpm.conf" state=link

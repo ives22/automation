@@ -1,0 +1,9 @@
+# 解压php软件包，编译安装
+- name: Tarxf Php 
+  shell: "cd {{ DOWNLOAD_DIR }} && tar xf php-{{ PHP_VERSION }}.tar.gz"
+
+- name: Install Php
+  shell: "if [ ! -d {{ INSTALL_DIR }}php-{{ PHP_VERSION }} ]; then cd {{ DOWNLOAD_DIR }}php-{{ PHP_VERSION }} && ./configure --prefix={{ INSTALL_DIR }}php-{{ PHP_VERSION }} --with-curl --with-freetype-dir --with-gd --with-gettext --with-iconv-dir --with-jpeg-dir --with-kerberos --with-libdir=lib64 --with-libxml-dir --with-mysql --with-mysqli --with-openssl --with-pcre-regex --with-pdo-mysql --with-dpo-sqlite --with-pear --with-png-dir --with-openssl --with-xmlrpc --with-xsl --with-zlib --enable-fpm --enable-bcmath --enable-libxml --enable-inline-optimization --enable-gd-native-ttf --enable-mbregex --enable-mbstring --enable-opcache --enable-pcntl --enable-shmop --enable-soap --enable-sockets --enable-sysvsem --enable-xml --enable-zip && make && make install ; fi"
+
+- name: Create Link
+  file: src="{{ INSTALL_DIR }}php-{{ PHP_VERSION }}" path="{{ INSTALL_DIR }}php" state=link

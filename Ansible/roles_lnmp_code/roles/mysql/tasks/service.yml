@@ -1,0 +1,9 @@
+# 启动MySQL
+- name: Start MySQL
+  service: name=mysqld state=started enabled=yes
+  when: ansible_distribution_major_version == "6"
+
+- name: Start Mariadb
+  service: name=mariadb state=started enabled=yes
+  when: ansible_distribution_major_version == "7"
+

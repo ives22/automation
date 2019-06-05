@@ -1,0 +1,6 @@
+#源码编译安装nginx
+---
+- hosts: all
+  remote_user: root
+  roles:
+    - role: php

@@ -1,0 +1,28 @@
+#配置lnmp,创建虚拟主机
+---
+- hosts: all
+  remote_user: root
+  roles:
+    - role: nginx
+    - role: php 
+    - role: mysql
+  
+  vars:
+    PORT: 8081
+    WEBDIR: "/opt/www"
+    CONFIGDIR: "/usr/local/nginx/conf/conf.d"
+
+  tasks:
+    - name: create vhost dir
+      file: name={{ WEBDIR }} state=directory owner=www group=www mode=755
+
+    - name: create vhost conf
+      template: src=vhost.conf.j2 dest={{ CONFIGDIR }}/vhost.conf
+      notify: Restart Nginx
+
+    - name: create index.php
+      shell: "echo '<?php phpinfo(); ?>' > {{ WEBDIR }}/index.php"
+    
+  handlers:
+    - name: Restart Nginx
+      service: name=nginx state=restarted

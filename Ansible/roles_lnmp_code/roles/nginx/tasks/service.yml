@@ -1,0 +1,15 @@
+# nginx启动文件配置
+- name: Copy Service Template7
+  template: src=nginx.service.j2 dest=/usr/lib/systemd/system/nginx.service
+  when: ansible_distribution_major_version == "7"
+
+- name: Copy Service Template6
+  template: src=nginx_init.j2 dest=/etc/init.d/nginx
+  when: ansible_distribution_major_version == "6"
+
+- name: Reload System
+  shell: "systemctl daemon-reload"
+
+- name: Start Nginx
+  service: name=nginx state=started enabled=yes
+

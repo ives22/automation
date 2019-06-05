@@ -1,0 +1,6 @@
+#yum安装MySQL
+---
+- hosts: all
+  remote_user: root
+  roles:
+    - role: mysql 

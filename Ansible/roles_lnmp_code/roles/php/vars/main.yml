@@ -1,0 +1,5 @@
+DOWNLOAD_DIR: "/usr/local/src/"
+INSTALL_DIR: "/usr/local/"
+PHP_VERSION: "5.6.40"
+USER: "www"
+GROUP: "www"

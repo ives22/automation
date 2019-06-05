@@ -1,0 +1,5 @@
+DOWNLOAD_DIR: "/usr/local/src/"
+INSTALL_DIR: "/usr/local/"
+NGINX_VERSION: "1.12.2"
+USER: "nginx"
+GROUP: "nginx"

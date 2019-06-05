@@ -1,0 +1,41 @@
+#安装源码编译php、nginx时所需要用到的依赖包
+---
+- hosts: all 
+  remote_user: root
+
+  tasks:
+    - name: Install Package
+      yum: name={{ item }} state=installed
+      with_items:
+        - gcc-c++
+        - glibc
+        - glibc-devel
+        - glib2
+        - glib2-devel
+        - pcre
+        - pcre-devel
+        - zlib
+        - zlib-devel
+        - openssl
+        - openssl-devel
+        - libpng
+        - libpng-devel
+        - freetype
+        - freetype-devel
+        - libxml2
+        - libxml2-devel
+        - bzip2
+        - bzip2-devel
+        - ncurses
+        - curl
+        - gdbm-devel
+        - libXpm-devel
+        - libX11-devel
+        - gd-devel
+        - gmp-devel
+        - readline-devel
+        - libxslt-devel
+        - expat-devel
+        - xmlrpc-c
+        - libcurl-devel
+

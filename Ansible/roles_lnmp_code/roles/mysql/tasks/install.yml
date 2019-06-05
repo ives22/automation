@@ -1,0 +1,17 @@
+# 安装MySQL
+- name: Config MySQL Repo
+  yum: name="http://repo.mysql.com//mysql57-community-release-el6-8.noarch.rpm" state=installed
+  when: ansible_distribution_major_version == "6"
+
+- name: Config mysql56 Repo
+  shell: "yum-config-manager --enable mysql56-community && yum-config-manager --disable mysql57-community"
+  when: ansible_distribution_major_version == "6"
+
+- name: Install MySQL
+  yum: name=mysql-community-server state=installed
+  when: ansible_distribution_major_version == "6"
+
+
+- name: Install Mariadb
+  yum: name=mariadb-server,mariadb state=installed
+  when: ansible_distribution_major_version == "7"
